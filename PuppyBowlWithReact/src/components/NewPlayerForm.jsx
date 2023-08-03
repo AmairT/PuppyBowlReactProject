@@ -22,7 +22,7 @@ export default function NewPlayerForm() {
                     imageUrl: imageUrl,
                 })
         })
-        const result = await response.JSON();
+        const result = await response.json();
         console.log(result)
         setNewPlayer('');
         setBreed('');
@@ -58,8 +58,9 @@ return (
                 <option value='field'>Field</option>
             </select>
         </div>
-            <button className='submit' type='submit'>Submit</button>
-            <button className='reset' type='reset'>Reset</button>
+
+        <button className='submit' type='submit'>Submit</button>
+        <button className='reset' type='reset'>Reset</button>
     </form>
     </>
 );

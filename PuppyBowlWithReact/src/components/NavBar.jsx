@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom"
+
 export default function NavBar() {
     return (
         <>
-            <h2>Welcome to the Puppy Bowl!</h2>
+        <NavBar style = {{
+            display: 'flex',
+            gap: '8px',
+        }}>
+            <Link to='/'>Home</Link>
+        </NavBar>
         </>
     )
 }
