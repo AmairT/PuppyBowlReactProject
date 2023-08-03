@@ -1,10 +1,8 @@
 import ajaxHelpers from '../API/ajaxHelpers'
 import { useNavigate } from 'react-router-dom'
-// import SinglePlayer from './SinglePlayer'
 import NewPlayerForm from './NewPlayerForm'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
 
 export default function AllPlayers() {
     const [players, setPlayers] = useState([]);
