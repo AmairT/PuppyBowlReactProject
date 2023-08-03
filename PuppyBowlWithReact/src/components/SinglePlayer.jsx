@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { useEffect } from "react"
 import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import Previous from "./Previous";
+import Delete from "./Delete";
 
 export default function SinglePlayer() {
     let {id} = useParams();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [playerId, setPlayerId] = useState({})
     // const cohortName = '2302-acc-ct-web-pt-a';
 
@@ -29,8 +30,10 @@ export default function SinglePlayer() {
                 <h4>{playerId.name}</h4>
                 <h4>{playerId.breed}</h4>
                 <img src={playerId.imgUrl} /> <br />
-                <button className='delete' onClick={()=> delete(`/players/${playerId.id}`)}>Delete Puppy</button>
-                <button onClick={()=> navigate(`/players/${playerId.id}`)}>Previous Page</button>
+                <Delete />
+                <Previous />
+                {/* <button className='delete' onClick={()=> delete(`/players/${playerId.id}`)}>Delete Puppy</button>
+                <button onClick={()=> navigate(`/players/${playerId.id}`)}>Previous Page</button> */}
             </div>
         </>
     )
