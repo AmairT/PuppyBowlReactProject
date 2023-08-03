@@ -1,7 +1,7 @@
 export default function NavBar() {
     return (
         <>
-            <h2>The NavBar Component</h2>
+            <h2>Welcome to the Puppy Bowl!</h2>
         </>
     )
 }
