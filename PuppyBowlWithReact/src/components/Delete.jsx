@@ -1,7 +1,8 @@
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 
 export default function Delete() {
     const {id} = useParams();
+
     const handleDelete = async(event) => {
         event.preventDefault();
         try {
