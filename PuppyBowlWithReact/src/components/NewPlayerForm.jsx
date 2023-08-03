@@ -5,12 +5,12 @@ export default function NewPlayerForm() {
     const [breed, setBreed] = useState('');
     const [status, setStatus] = ('');
     const [imageUrl, setImageUrl] = useState('');
-    const cohortName = '2302-acc-ct-web-pt-a';
+    // const cohortName = '2302-acc-ct-web-pt-a';
 
     async function handleSubmit(event) {
         event.preventDefault();
         try {
-            const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`, {
+            const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/2302-acc-ct-web-pt-a/players`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -7,12 +7,12 @@ export default function SinglePlayer() {
     let {id} = useParams();
     const navigate = useNavigate();
     const [playerId, setPlayerId] = useState({})
-    const cohortName = '2302-acc-ct-web-pt-a';
+    // const cohortName = '2302-acc-ct-web-pt-a';
 
     useEffect(() => {
         const fetchSinglePlayer = async ()=> {
             try {
-                const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players/${id}`);
+                const response = await fetch (`https://fsa-puppy-bowl.herokuapp.com/api/2302-acc-ct-web-pt-a/players/${id}`);
                 const result = await response.json();
                 setPlayerId(result.data.player)
                 if (result.error) throw result.error;
