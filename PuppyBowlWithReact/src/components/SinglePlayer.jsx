@@ -32,8 +32,6 @@ export default function SinglePlayer() {
                 <img src={playerId.imgUrl} /> <br />
                 <Delete />
                 <Previous />
-                {/* <button className='delete' onClick={()=> delete(`/players/${playerId.id}`)}>Delete Puppy</button>
-                <button onClick={()=> navigate(`/players/${playerId.id}`)}>Previous Page</button> */}
             </div>
         </>
     )

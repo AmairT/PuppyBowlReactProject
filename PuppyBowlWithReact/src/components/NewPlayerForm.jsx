@@ -37,8 +37,8 @@ export default function NewPlayerForm() {
 
 return (
     <>
-    <form method='post' onSubmit= {handleSubmit}>
-        <h3>Add A New Player!</h3>
+    <form className='form' method='post' onSubmit= {handleSubmit}>
+        <h3 style={{color:'blue'}}>Add A New Player!</h3>
         <label>Name:{''}
             <input value={newPlayer} onChange={(e)=> {setNewPlayer(e.target.value)}}></input>
         </label>
@@ -60,7 +60,6 @@ return (
         </div>
 
         <button className='submit' type='submit'>Submit</button>
-        <button className='reset' type='reset'>Reset</button>
     </form>
     </>
 );

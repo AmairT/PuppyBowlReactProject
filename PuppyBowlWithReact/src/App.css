@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: khaki;
 }
 
 .AllPlayers {
@@ -24,4 +25,8 @@ img {
   width: 100px;
   height: 100px;
   
+}
+
+button {
+  color: blue;
 }
