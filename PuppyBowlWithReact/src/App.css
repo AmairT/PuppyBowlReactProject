@@ -5,3 +5,23 @@
   text-align: center;
 }
 
+.AllPlayers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ABB8C3;
+  border-radius: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  
+}

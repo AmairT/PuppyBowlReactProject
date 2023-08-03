@@ -25,7 +25,7 @@ export default function AllPlayers() {
                 return (
                     <div className='allPlayers' key={player.id}>
                         <h4>Hi, my name is {player.name}!</h4>
-                        <img src='{player.imageUrl}' alt='' />
+                        <img src={player.imageUrl} /> <br />
                         <button onClick={() => navigate(`/players/${player.id}`)}>See Details</button>
                     </div>
                 )
@@ -34,5 +34,5 @@ export default function AllPlayers() {
             <NewPlayerForm />
         </div>
     </>
-    )
+    );
 }
